@@ -70,7 +70,8 @@ void UnitsAttached::screenChanged(QScreen *screen)
 
 int UnitsAttached::dp() const
 {
-#if QT_VERSION >= QT_VERSION_CHECK(5, 6, 0)
+// #if QT_VERSION >= QT_VERSION_CHECK(5, 6, 0)
+#if 0
     return m_multiplier;
 #else
     auto dp = dpi() / 160;
